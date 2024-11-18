@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW2 - Page 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+</head>
+<body>
+    <h1>Page 3 - Moment.js</h1>
+    <nav>
+        <a href="index.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html"><b>Page 3</b></a>
+        <a href="page4.html">Page 4</a>
+        <a href="page5.html">Page 5</a>
+    </nav>
+
+    <p>Current Date and Time: <span id="currentTime"></span></p>
+
+    <script>
+        document.getElementById('currentTime').textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
+    </script>
+</body>
+</html>
